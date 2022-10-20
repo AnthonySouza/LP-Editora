@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+/*CARROSSEL*/
+.slider-lancamentos {
+  height: 100%;
+}
+
+.box {
+  background-color: #ccc;
+  padding: 20px;
+  border: 1px solid #111;
+  color: initial;
+  height: 100%;
+}
+
+.dotted.slick-slider {
+    margin-bottom: 0!important;
+}
+
+.slider-lancamentos .slick-prev {
+  left: 15px !important;
+  z-index: 1;
+}
+
+.slider-lancamentos .slick-next {
+  right: 15px !important;
+  z-index: 1;
+}
+
+.slider-lancamentos .slick-dotted.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+.slider-lancamentos .slick-dots {
+  bottom: 10px !important;
+}
+
+.slick-list.draggable {
+    height: 100%;
+}
+
+.slick-list.draggable .slick-track {
+    height: 100%;
+}
+
+.section .carrossel {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+/* SEÇÃO LANÇAMENTOS LIVROS */
+
+.box.lancamentos {
+    display: flex!important;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lancamentos .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lancamentos .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 96px;
+}
+
+.lancamentos .subtitle {
+  font-family: "Roboto", sans-serif;
+}
+
+/* CARROSSEL LANÇAMENTOS LIVROS */
+.box.lancamentos .livros-carrossel-container {
+  background-color: transparent;
+  width: 40%;
+  height: auto;
+}
+
+.splide__slide div {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide__slide {
+  opacity: 0.6;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
